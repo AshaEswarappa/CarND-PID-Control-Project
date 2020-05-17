@@ -13,10 +13,10 @@ The final tuned parameters for steering can be found in the code line 45. And, f
 ## Effects of PID components:
 
 ### - P-Controller: 
-Proportion to the cross-track error(CTE) which indicates how far is the car from the middle lane of the road. If the car is far away from the right it steers to the left, if it's slightly to towards left then it steers to the right. The video corresponding to only P-Controller can be found here ![P-Controller](./Ouput/P_Con_0.5.mp4)
+Proportion to the cross-track error(CTE) which indicates how far is the car from the middle lane of the road. If the car is far away from the right it steers to the left, if it's slightly to towards left then it steers to the right. The video corresponding to only P-Controller can be found here ![P-Controller](./Output/P_Con_0.5.mp4)
 
 ### - I-Controller: 
-Sum/Integral of all the CTE. In case if there is bias/offset in the CTE, then the integrator acculmulates the error which inturn increases control signal and there by finally reducing error. However, this has very less influnece for the simulator provided. The video corresponding to only I-Controller can be found here ![I-Controller](./Ouput/I_Con_0.5.mp4)
+Sum/Integral of all the CTE. In case if there is bias/offset in the CTE, then the integrator acculmulates the error which inturn increases control signal and there by finally reducing error. However, this has very less influnece for the simulator provided. The video corresponding to only I-Controller can be found here ![I-Controller](./Output/I_Con_0.5.mp4)
 
 ### - D-Controller:
-Proportional to the rate of change of CTE/dervative of CTE. The parameter is used to reduce overshooting and dump oscillations caused by the P-parameter. The video corresponding to only D-Controller can be found here ![D-Controller](./Ouput/D_Con_1.0.mp4)
+Proportional to the rate of change of CTE/dervative of CTE. The parameter is used to reduce overshooting and dump oscillations caused by the P-parameter. The video corresponding to only D-Controller can be found here ![D-Controller](./Output/D_Con_1.0.mp4)
