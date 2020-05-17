@@ -1,11 +1,22 @@
 #ifndef PID_H
 #define PID_H
 
-class PID {
+class PID 
+{
  public:
   /**
    * Constructor
    */
+  /*Declartion of parameter for proportional error */
+  double prev_cte;
+  
+  /*Total of total error from PID controller */
+  double Total_Err;
+
+
+/*declartion of counter */
+  double counter;
+
   PID();
 
   /**
